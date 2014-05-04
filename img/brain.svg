@@ -8,15 +8,15 @@ viewBox="0 0 800 1000"
  <g id="layer">
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <ellipse class="fil0 str0" cx="410" cy="500" rx="329" ry="436"/>
-  <ellipse class="fil1" transform="matrix(0.132208 -0.300263 0.300263 0.132208 217.566 302.814)" rx="377" ry="254"/>
-  <ellipse id="software" class="fil1" transform="matrix(-0.221842 -0.379758 0.379758 -0.221842 277.751 735.198)" rx="377" ry="254"/>
-  <ellipse class="fil2" transform="matrix(0.158183 -0.135039 0.135039 0.158183 478.542 854.527)" rx="377" ry="254"/>
-  <ellipse class="fil2" transform="matrix(0.158183 -0.135039 0.135039 0.158183 605.002 751.918)" rx="377" ry="254"/>
-  <ellipse class="fil3" transform="matrix(0.158183 -0.135039 0.135039 0.158183 643.459 611.4)" rx="377" ry="254"/>
-  <ellipse class="fil3" transform="matrix(0.199661 -0.170448 0.170448 0.199661 535.482 533.007)" rx="377" ry="254"/>
-  <ellipse class="fil2" transform="matrix(0.158183 -0.135039 0.135039 0.158183 489.63 396.927)" rx="377" ry="254"/>
-  <ellipse class="fil2" transform="matrix(-0.0872465 -0.247599 0.247599 -0.0872465 643.458 368.823)" rx="377" ry="254"/>
-  <ellipse class="fil2" transform="matrix(-0.0654227 -0.202165 0.270752 -0.0488498 483.019 170.62)" rx="377" ry="254"/>
-  <ellipse class="fil1" transform="matrix(0.0275749 -0.206148 0.206148 0.0275749 355.028 169.141)" rx="377" ry="254"/>
+  <ellipse class="fil1 str1" transform="matrix(0.132208 -0.300263 0.300263 0.132208 217.566 302.814)" rx="377" ry="254"/>
+  <ellipse id="software" class="fil1 str1" transform="matrix(-0.221842 -0.379758 0.379758 -0.221842 277.751 735.198)" rx="377" ry="254"/>
+  <ellipse class="fil2 str1" transform="matrix(0.158183 -0.135039 0.135039 0.158183 478.542 854.527)" rx="377" ry="254"/>
+  <ellipse class="fil2 str1" transform="matrix(0.158183 -0.135039 0.135039 0.158183 605.002 751.918)" rx="377" ry="254"/>
+  <ellipse class="fil3 str1" transform="matrix(0.158183 -0.135039 0.135039 0.158183 643.459 611.4)" rx="377" ry="254"/>
+  <ellipse class="fil3 str1" transform="matrix(0.199661 -0.170448 0.170448 0.199661 535.482 533.007)" rx="377" ry="254"/>
+  <ellipse class="fil2 str1" transform="matrix(0.158183 -0.135039 0.135039 0.158183 489.63 396.927)" rx="377" ry="254"/>
+  <ellipse class="fil2 str1" transform="matrix(-0.0872465 -0.247599 0.247599 -0.0872465 643.458 368.823)" rx="377" ry="254"/>
+  <ellipse class="fil2 str1" transform="matrix(-0.0654227 -0.202165 0.270752 -0.0488498 483.019 170.62)" rx="377" ry="254"/>
+  <ellipse class="fil1 str1" transform="matrix(0.0275749 -0.206148 0.206148 0.0275749 355.028 169.141)" rx="377" ry="254"/>
  </g>
 </svg>

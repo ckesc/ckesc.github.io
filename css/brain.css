@@ -4,3 +4,42 @@
 .fil1 {fill:#A2D9F7}
 .fil3 {fill:#F7B275}
 .fil0 {fill:#FEFEFE}
+
+.str1 {
+    -webkit-animation-name: 'undash';
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    stroke:#2B2A29;
+    stroke-width:10
+}
+
+.str1 {
+
+}
+.str1:hover {
+    -webkit-animation-name: 'dash';
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    stroke-dashoffset: 7990;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 7990;
+  }
+}
+
+@-webkit-keyframes undash {
+  from {
+    stroke-dashoffset: 7990;
+  }
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
