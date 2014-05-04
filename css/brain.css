@@ -1,6 +1,6 @@
 @font-face {
     font-family: Gulim; /* Гарнитура шрифта */
-    src: url(fonts/gulim.ttc); /* Путь к файлу со шрифтом */
+    src: url(../fonts/gulim.ttc); /* Путь к файлу со шрифтом */
 }
 
 @charset "UTF-8";

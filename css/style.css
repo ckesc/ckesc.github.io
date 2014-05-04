@@ -1,3 +1,10 @@
+@font-face {
+    font-family: LithosPro; /* Гарнитура шрифта */
+    font-weight: bold;
+    src: url(../fonts/LithosPro-Black.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    
+}
+
 body {
     background: #4D897C;
 }
@@ -5,4 +12,12 @@ body {
 .brain_holder {
     width: 1000px;
     margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: LithosPro;
+    font-size: 60px;
+    margin: 10px 0 0 0;
 }
