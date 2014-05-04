@@ -6,24 +6,28 @@
 .fil0 {fill:#FEFEFE}
 
 .str1 {
-    -webkit-animation-name: 'undash';
+    -webkit-transform-origin: center center;
+
+    -webkit-animation-name: 'unsmall';
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards
+
 
     stroke-dasharray: 10000;
     stroke-dashoffset: 10000;
     stroke:#2B2A29;
-    stroke-width:10
-}
+    stroke-width:1
 
-.str1 {
 
 }
+
 .str1:hover {
-    -webkit-animation-name: 'dash';
+    -webkit-animation-name: 'small';
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: ease;
-    stroke-dashoffset: 7990;
+    -webkit-animation-direction: normal;
+
 }
 
 @-webkit-keyframes dash {
@@ -43,3 +47,24 @@
     stroke-dashoffset: 10000;
   }
 }
+
+@-webkit-keyframes small {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes unsmall {
+  from {
+    -webkit-transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+
+}
+
+
