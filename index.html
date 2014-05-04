@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Shock Industry</title>
+         <link rel="stylesheet" href="/css/brain.css">
+        <style>
+        body {
+            background: #c5c5c5;
+        }
+        </style>
+        <script src="js/snap.svg-min.js"></script>
+    </head>
+    <body> 
+        <svg id = "brain" style = "width:100%"/>
+        <script>
+            var brain_div = document.getElementById('brain');
+            var s = Snap(brain_div);
+            
+            Snap.load("img/brain.svg", function (f) {
+                var g = f.select("g");
+                s.append(g);
+                g.drag();
+            });
+        </script>
+    </body>
+</html>
