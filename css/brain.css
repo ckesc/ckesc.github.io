@@ -1,45 +1,79 @@
+@font-face {
+    font-family: Gulim; /* Гарнитура шрифта */
+    src: url(fonts/gulim.ttc); /* Путь к файлу со шрифтом */
+}
+
 @charset "UTF-8";
-.str0 {stroke:#2B2A29;stroke-width:2.36221}
-.fil2 {fill:#5CA595}
-.fil1 {fill:#A2D9F7}
-.fil3 {fill:#F7B275}
-.fil0 {fill:#FEFEFE}
+.str1 {stroke:#FEFEFE;stroke-width:2.36221}
+.str0 {stroke:#FEFEFE;stroke-width:2.36221;stroke-dasharray:11.811033 7.086620}
+.fil0 {fill:none}
+.fil2 {fill:#FEFEFE}
+.fil5 {fill:black}
+.fil7 {fill:#100000}
+.fil6 {fill:#4C3B2B}
+.fil3 {fill:#62472A}
+.fil8 {fill:#E3F3E8}
+.fil4 {fill:#F9A717}
+.fil1 {fill:#2E6358}
+.fnt0 {font-weight:normal;font-size:21.4311px;font-family:'Gulim'}
+.fnt1 {font-weight:normal;font-size:25.5295px;font-family:'Gulim'}
 
-.str1 {
-    -webkit-animation-name: 'undash';
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease;
-
-    stroke-dasharray: 10000;
-    stroke-dashoffset: 10000;
-    stroke:#2B2A29;
-    stroke-width:10
+.beePath {
+    fill:none;
+}
+.text, .bee_text{
+    fill:#FEFEFE;
+    opacity: 0;  
+    
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
-.str1 {
-
-}
-.str1:hover {
-    -webkit-animation-name: 'dash';
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease;
-    stroke-dashoffset: 7990;
+.bee_text {
+    fill:#FEFEFE;
 }
 
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 10000;
-  }
-  to {
-    stroke-dashoffset: 7990;
-  }
+.fil0 {
+    opacity: 0;
+    
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
-@-webkit-keyframes undash {
-  from {
-    stroke-dashoffset: 7990;
-  }
-  to {
-    stroke-dashoffset: 10000;
-  }
+#brain {
+    width: 100%;     
+}
+
+.fil2 {
+    fill:#2E6358;
+    -webkit-transform-origin: center center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fil2:hover {
+    fill:#FEFEFE;
+    
+    -webkit-transform: scale(0.9);
+}
+
+.gyrus_group, #bee_popup, #bee_text {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.gyrus_group:hover > .text {
+    opacity: 1;
+}
+.gyrus_group:hover > .fil0 {
+    opacity: 1;
+}
+
+#bee_popup, #bee_text {
+    opacity: 0;
+}
+
+.bee_popup_group:hover > #bee_popup {
+    opacity: 1;
+}
+.bee_popup_group:hover > #bee_text {
+    opacity: 1;
 }
