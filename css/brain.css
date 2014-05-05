@@ -37,10 +37,12 @@
 }
 
 .fil0 {
-    opacity: 0;
-    
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    stroke:#2E6358;
 }
 
 #brain {
@@ -50,8 +52,9 @@
 .fil2 {
     fill:#2E6358;
     -webkit-transform-origin: center center;
-    -webkit-transition: all 0.5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+
 }
 .fil2:hover {
     fill:#FEFEFE;
@@ -67,7 +70,8 @@
     opacity: 1;
 }
 .gyrus_group:hover > .fil0 {
-    opacity: 1;
+    stroke-dashoffset: 0;
+    stroke:#FEFEFE;
 }
 
 #bee_popup, #bee_text {
