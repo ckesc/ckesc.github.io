@@ -2,6 +2,7 @@
     font-family: 'Gulim';
     src: local('Gulim'),
          url('../fonts/gulim.woff') format('woff'),
+         url('../fonts/gulim.otf'),
          url(../fonts/gulim.ttc);
 }
 
