@@ -1,6 +1,8 @@
 @font-face {
-    font-family: Gulim; /* Гарнитура шрифта */
-    src: url(../fonts/gulim.ttc); /* Путь к файлу со шрифтом */
+    font-family: 'Gulim';
+    src: local('Gulim'),
+         url('../fonts/gulim.woff') format('woff'),
+         url(../fonts/gulim.ttc);
 }
 
 @charset "UTF-8";
@@ -47,8 +49,8 @@
 .fil2 {
     fill:#2E6358;
     -webkit-transform-origin: center center;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 .fil2:hover {
     fill:#FEFEFE;

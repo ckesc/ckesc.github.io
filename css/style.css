@@ -1,9 +1,4 @@
-@font-face {
-    font-family: LithosPro; /* Гарнитура шрифта */
-    font-weight: bold;
-    src: url(../fonts/LithosPro-Black.otf) format("opentype"); /* Путь к файлу со шрифтом */
-    
-}
+@import url("../fonts/lithospro-black.css");
 
 body {
     background: #4D897C;
@@ -17,7 +12,7 @@ body {
 h1 {
     text-align: center;
     color: #fff;
-    font-family: LithosPro;
+    font-family: LithosPro850;
     font-size: 60px;
     margin: 10px 0 0 0;
 }
