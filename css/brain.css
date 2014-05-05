@@ -29,7 +29,7 @@
     opacity: 0;  
     
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
 }
 
 .bee_text {
@@ -38,7 +38,7 @@
 
 .fil0 {
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
 
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
@@ -52,19 +52,21 @@
 .fil2 {
     fill:#2E6358;
     -webkit-transform-origin: center center;
+            transform-origin: center center;
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
 
 }
 .fil2:hover {
     fill:#FEFEFE;
     
     -webkit-transform: scale(0.9);
+            transform: scale(0.9);
 }
 
 .gyrus_group, #bee_popup, #bee_text {
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
 }
 .gyrus_group:hover > .text {
     opacity: 1;
