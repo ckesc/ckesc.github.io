@@ -32,6 +32,10 @@
             transition: all 1s ease;
 }
 
+.str0 {
+     stroke-dashoffset: 0;
+}
+
 .bee_text {
     fill:#FEFEFE;
 }
@@ -61,7 +65,7 @@
     fill:#FEFEFE;
     
     -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+/*            transform: scale(0.9); т.к. в firefoxбаг смаштабом*/
 }
 
 .gyrus_group, #bee_popup, #bee_text {
