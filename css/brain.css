@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Gulim';
     src: local('Gulim'),
-         url('../fonts/gulim.woff') format('woff'),
-         url('../fonts/gulim.otf'),
+         url('../fonts/Gulim.woff') format('woff'),
+         url('../fonts/Gulim.otf'),
          url(../fonts/gulim.ttc);
 }
 
