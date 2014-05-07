@@ -45,10 +45,6 @@
             transition: all 1s ease;
 }
 
-.bee_text {
-    fill:#FEFEFE;
-}
-
 #brain {
     width: 100%;     
 }
@@ -90,6 +86,12 @@
     stroke:#2E6358;
 }
 
+.bee_fil8 {
+    -webkit-transition: all 1s ease;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: 812px 590px;
+}
+
 .gyrus_group:hover > .line {
     stroke-dashoffset: 0;
     stroke:#FEFEFE;
@@ -105,4 +107,18 @@
 
 .bee_popup_group:hover > #bee_text {
     opacity: 1;
+}
+
+.bee_popup_group:hover  .bee_fil8 {
+    -webkit-animation: "bzz" .01s steps(2) infinite;
+}
+
+@-webkit-keyframes bzz {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+
+  to {
+      -webkit-transform: rotate(10deg);
+  }
 }
