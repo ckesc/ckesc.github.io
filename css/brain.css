@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
     font-family: 'Gulim';
     src: local('Gulim'),
@@ -6,24 +7,36 @@
          url(../fonts/gulim.ttc);
 }
 
-@charset "UTF-8";
-.str1 {stroke:#FEFEFE;stroke-width:2.36221}
-.str0 {stroke:#FEFEFE;stroke-width:2.36221;stroke-dasharray:11.811033 7.086620}
-.fil0 {fill:none}
-.fil2 {fill:#FEFEFE}
-.fil5 {fill:black}
-.fil7 {fill:#100000}
-.fil6 {fill:#4C3B2B}
-.fil3 {fill:#62472A}
-.fil8 {fill:#E3F3E8}
-.fil4 {fill:#F9A717}
 .fil1 {fill:#2E6358}
-.fnt0 {font-weight:normal;font-size:21.4311px;font-family:'Gulim'}
-.fnt1 {font-weight:normal;font-size:25.5295px;font-family:'Gulim'}
+
+.bee_fil5 {fill:black}
+.bee_fil7 {fill:#100000}
+.bee_fil6 {fill:#4C3B2B}
+.bee_fil3 {fill:#62472A}
+.bee_fil8 {fill:#E3F3E8}
+.bee_fil4 {fill:#F9A717}
+
+.bee_float_text {
+    font-weight:normal;
+    font-size:21.4311px;
+    font-family:'Gulim';
+    fill:#2E6358;
+}
+
+.text {
+    font-weight:normal;
+    font-size:25.5295px;
+    font-family:'Gulim'
+}
 
 .beePath {
+    stroke:#FEFEFE;
+    stroke-width:2.36221;
+    stroke-dasharray:11.811033 7.086620;
+    stroke-dashoffset: 0;
     fill:none;
 }
+
 .text, .bee_text{
     fill:#FEFEFE;
     opacity: 0;  
@@ -32,28 +45,15 @@
             transition: all 1s ease;
 }
 
-.str0 {
-     stroke-dashoffset: 0;
-}
-
 .bee_text {
     fill:#FEFEFE;
-}
-
-.fil0 {
-    -webkit-transition: all 1s ease;
-            transition: all 1s ease;
-
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
-    stroke:#2E6358;
 }
 
 #brain {
     width: 100%;     
 }
 
-.fil2 {
+.gyrus_figure {
     fill:#2E6358;
     -webkit-transform-origin: center center;
             transform-origin: center center;
@@ -61,7 +61,7 @@
             transition: all 1s ease;
 
 }
-.fil2:hover {
+.gyrus_figure:hover {
     fill:#FEFEFE;
     
     -webkit-transform: scale(0.9);
@@ -72,10 +72,25 @@
     -webkit-transition: all 1s ease;
             transition: all 1s ease;
 }
+
 .gyrus_group:hover > .text {
     opacity: 1;
 }
-.gyrus_group:hover > .fil0 {
+
+.line {
+    stroke-width:2.36221;
+    fill:none;
+    -webkit-transition: stroke-dashoffset 1s ease,
+                        stroke 1s ease;
+            transition: stroke-dashoffset 1s ease,
+                        stroke 1s ease;
+
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    stroke:#2E6358;
+}
+
+.gyrus_group:hover > .line {
     stroke-dashoffset: 0;
     stroke:#FEFEFE;
 }
@@ -87,6 +102,7 @@
 .bee_popup_group:hover > #bee_popup {
     opacity: 1;
 }
+
 .bee_popup_group:hover > #bee_text {
     opacity: 1;
 }
