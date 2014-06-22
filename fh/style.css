@@ -1,0 +1,18 @@
+@import url("../fonts/lithospro-black.css");
+
+body {
+    background: #E95458;
+}
+
+.eye_holder {
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: LithosPro850;
+    font-size: 60px;
+    margin: 10px 0 15px 0;
+}
