@@ -2,21 +2,32 @@ var mouse_captured = false;
 var start_x = 0;
 var start_y = 0;
 
-function moveEye(x, y) {
-    $('#eye1').css({
-        'transform': 'translate(' + 270 * x + 'px, ' + 210 * y + 'px)'
-    });
-    $('#eye2').css({
-        'transform': 'translate(' + 270 * -1 * x + 'px, ' + 210 * y + 'px)'
-    });
-    $('#eye3').css({
-        'transform': 'translate(' + 270 * x + 'px, ' + 210 * y + 'px)'
-    });
-    $('#eye4').css({
-        'transform': 'translate(' + 400 * x + 'px, ' + 300 * -1 * y + 'px)'
-    });
-    $('#eye5').css({
-        'transform': 'translate(' + 650 * x + 'px, ' + 300 * y + 'px)'
+function moveEyes(x, y) {
+    moveEye (1, x, y, +100,  +600, +150, +150);
+    moveEye (2, x, y, -270,  -670, +210, +210);
+    moveEye (3, x, y, +270,  +270, +400, +50);
+    moveEye (4, x, y, +1000, +200, -300, -100);
+    moveEye (5, x, y, +700,  +500, +100, +500);
+}
+
+function moveEye(number, x, y, maxX, minX, maxY, minY) {
+    var translateX;
+    var translateY;
+
+    if (x > 0) {
+        translateX = maxX * x;
+    } else {
+        translateX = minX * x;
+    }
+
+    if (y > 0) {
+        translateY = maxY * y;
+    } else {
+        translateY = minY * y;
+    }
+
+    $('#eye' + number).css({
+        'transform': 'translate(' + translateX + 'px, ' + translateY + 'px)'
     });
 }
 
@@ -60,7 +71,7 @@ function eyeTrack() {
 
         console.log ('mouse '+x+' '+y);
 
-        moveEye(x,y);
+        moveEyes(x,y);
     }
 
     function handleTouch(event) {
@@ -74,7 +85,7 @@ function eyeTrack() {
         var y = (touches[0].pageY - start_y) / window.innerHeight * 2;
         console.log ('touches: '+touches);
 
-        moveEye(x,y);
+        moveEyes(x,y);
     }
 
 }
